@@ -20,6 +20,7 @@ nav {
    
    
 }
+
 nav img {
     width: 100px;
     margin: 2px;
@@ -56,11 +57,6 @@ nav img {
    
 }
 
-.nav-links ul li:hover::after {
-   
-    width: 100%;
-
-}
 
 
 .nav-links ul li:hover {
@@ -68,6 +64,12 @@ nav img {
     background: #1565c0;
     transform: translateY(-4px);
 }
+
+
+
+
+
+
 
 
 .text-box {
@@ -125,16 +127,21 @@ nav .fa{
     .nav-links ul li {
         display: block;
          background: transparent !important;
-         border-radius: 0 !important;
-         margin: 0 !important;
-         box-shadow: none !important;
-         padding: 8px 12px !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        padding: 8px 12px !important;
+        
     }
     
 
     .nav-links {
         position: fixed;
-        background:#f44336;
+        background: linear-gradient(
+            135deg,
+            #1e3c72,
+            #2a5298
+        );
         height: 100vh;
         width: 200px;
         top: 0;
@@ -414,7 +421,7 @@ h3{
 .sub-header {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/gallery9.png);
     
     background-size: cover;
     background-position: center;
@@ -700,6 +707,35 @@ h3{
     margin-right: 30px;
 }
 
+
+.bonafide-btn{
+  display: inline-block;
+    text-decoration: none;
+    color: orangered;
+    border: 1px solid orangered;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+
+.bonafide-btn:hover {
+    border: 1px solid orangered;
+    background:orangered;
+    transition: 0.8s;
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+
 .contact-col div p {
     padding: 0;
 }
@@ -806,3 +842,69 @@ h3{
 
 
 
+
+/* Bonafide Form */
+
+.bonafide-form{
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.bonafide-form h1{
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.bonafide-form p{
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.bonafide-form form{
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.bonafide-form input,
+.bonafide-form select,
+.bonafide-form textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.bonafide-form input:focus,
+.bonafide-form select:focus,
+.bonafide-form textarea:focus{
+    border-color: #f44336;
+}
+
+.bonafide-form select{
+    cursor: pointer;
+}
+
+
+/* Responsive */
+
+@media(max-width:700px){
+
+    .bonafide-form{
+        width: 90%;
+    }
+
+    .bonafide-form h1{
+        font-size: 28px;
+    }
+
+    .bonafide-form form{
+        padding: 20px;
+    }
+
+}
